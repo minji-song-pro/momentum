@@ -18,9 +18,11 @@
         }
 
         body {
-            background-image: url("https://img.freepik.com/premium-vector/christmas-elements-collection-different-funny-characters-winter-design_114582-493.jpg?w=2000");
+            background-image: url("https://www.lottehotel.com/content/dam/lotte-hotel/signiel/seoul/promotion/package/552-1440-pkg-LTSG.jpg");
             background-position: center;
-            color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
         }
 
         .time {
@@ -32,12 +34,13 @@
             font-size: 50px;
         }
 
-        .todo {
+        .dday {
             font-size: 30px;
         }
 
         .author {
             font-style: italic;
+            font-size: 20px;
         }
 
         .content {
@@ -52,6 +55,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            
+            color: yellow;
         }
 
         .quote {
@@ -62,6 +67,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            font-weight: bold;
+            color: white
         }
     </style>
     <script>
@@ -71,12 +79,12 @@
 <body>
     <div class="main">
         <div id="time" class="time">12:00</div>
-        <div class="greeting">Hello~</div>
-        <div class="todo">주 3회 운동하기</div>
+        <div class="greeting">Hello, Minji</div>
+        <div id="dday" class="dday"></div>
     </div>
     <div class="quote">
         <div id="content" class="content">" 명언의 내용 "</div>
-        <div id="author" class="author">- 명언의 저자 -</div>
+        <div id="author" class="author"></div>
     </div>
 </body>
 
